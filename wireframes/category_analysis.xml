@@ -1,0 +1,257 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Category Analysis Page -->
+  <rect x="0" y="0" width="900" height="1200" fill="#f5f7fa" />
+  <text x="450" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#2d3748" text-anchor="middle">Category Analysis</text>
+
+  <!-- Main App Container -->
+  <rect x="10" y="50" width="880" height="1130" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Top Header -->
+  <rect x="10" y="50" width="880" height="60" rx="5 5 0 0" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="140" y="87" font-family="Arial" font-size="22" font-weight="bold" fill="#2d3748">Receipt Analytics</text>
+  
+  <!-- User dropdown -->
+  <rect x="780" y="65" width="90" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <circle cx="795" cy="80" r="10" fill="#3182ce" />
+  <text x="815" y="85" font-family="Arial" font-size="14" fill="#4a5568">User ▼</text>
+  
+  <!-- Search Bar -->
+  <rect x="500" y="65" width="200" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="520" y="85" font-family="Arial" font-size="14" fill="#a0aec0">Search receipts...</text>
+  <text x="680" y="85" font-family="Arial" font-size="14" fill="#a0aec0">🔍</text>
+  
+  <!-- Sidebar Navigation -->
+  <rect x="10" y="110" width="170" height="1070" fill="#1a202c" rx="0 0 0 5" />
+  
+  <!-- Navigation items -->
+  <text x="50" y="150" font-family="Arial" font-size="14" fill="#a0aec0">Dashboard</text>
+  <text x="25" y="150" font-family="Arial" font-size="14" fill="#a0aec0">📊</text>
+  
+  <text x="50" y="200" font-family="Arial" font-size="14" fill="#a0aec0">All Receipts</text>
+  <text x="25" y="200" font-family="Arial" font-size="14" fill="#a0aec0">📝</text>
+  
+  <text x="50" y="250" font-family="Arial" font-size="14" fill="#a0aec0">Categories</text>
+  <text x="25" y="250" font-family="Arial" font-size="14" fill="#a0aec0">🏷️</text>
+  
+  <text x="50" y="300" font-family="Arial" font-size="14" fill="#a0aec0">Stores</text>
+  <text x="25" y="300" font-family="Arial" font-size="14" fill="#a0aec0">🏪</text>
+  
+  <text x="50" y="350" font-family="Arial" font-size="14" fill="#a0aec0">Budget</text>
+  <text x="25" y="350" font-family="Arial" font-size="14" fill="#a0aec0">💰</text>
+  
+  <rect x="10" y="375" width="170" height="40" fill="#2d3748" />
+  <text x="50" y="400" font-family="Arial" font-size="14" fill="#ffffff">Reports</text>
+  <text x="25" y="400" font-family="Arial" font-size="14" fill="#ffffff">📈</text>
+  
+  <text x="50" y="450" font-family="Arial" font-size="14" fill="#a0aec0">Settings</text>
+  <text x="25" y="450" font-family="Arial" font-size="14" fill="#a0aec0">⚙️</text>
+  
+  <line x1="25" y1="500" x2="165" y2="500" stroke="#4a5568" stroke-width="1" />
+  
+  <text x="50" y="540" font-family="Arial" font-size="14" fill="#a0aec0">Help Center</text>
+  <text x="25" y="540" font-family="Arial" font-size="14" fill="#a0aec0">❓</text>
+  
+  <!-- Main Content Area -->
+  <rect x="180" y="110" width="710" height="1070" fill="#ffffff" />
+  
+  <!-- Reports Header and Breadcrumb -->
+  <text x="200" y="140" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">Reports / Category Analysis</text>
+  
+  <!-- Date Range Selector -->
+  <rect x="500" y="120" width="250" height="30" rx="5" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="540" y="140" font-family="Arial" font-size="14" fill="#4a5568">Date Range: </text>
+  <text x="620" y="140" font-family="Arial" font-size="14" fill="#4a5568">Last 3 Months ▼</text>
+  
+  <!-- Export Report Button -->
+  <rect x="770" y="120" width="100" height="30" rx="5" fill="#3182ce" stroke="#2c5282" stroke-width="1" />
+  <text x="792" y="140" font-family="Arial" font-size="14" fill="#ffffff">Export</text>
+  
+  <!-- Report Tabs -->
+  <rect x="200" y="160" width="670" height="40" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  
+  <text x="267" y="185" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">Overview</text>
+  
+  <rect x="303" y="160" width="134" height="40" rx="0" fill="#3182ce" stroke="#2c5282" stroke-width="1" />
+  <text x="370" y="185" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Category Analysis</text>
+  
+  <text x="510" y="185" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">Store Analysis</text>
+  <text x="645" y="185" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">Spending Trends</text>
+  <text x="780" y="185" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">Custom Reports</text>
+  
+  <!-- Category Selector -->
+  <rect x="200" y="210" width="670" height="60" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="220" y="245" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Select Category:</text>
+  
+  <!-- Category Pills -->
+  <rect x="350" y="225" width="100" height="30" rx="15" fill="#3182ce" stroke="#2c5282" stroke-width="1" />
+  <text x="400" y="245" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Groceries</text>
+  
+  <rect x="460" y="225" width="100" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="510" y="245" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">Dining Out</text>
+  
+  <rect x="570" y="225" width="100" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="620" y="245" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">Shopping</text>
+  
+  <rect x="680" y="225" width="100" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="730" y="245" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">Utilities</text>
+  
+  <!-- Top Section: Category Overview -->
+  <rect x="200" y="280" width="670" height="150" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="220" y="305" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Groceries Overview</text>
+  
+  <!-- Key Stats -->
+  <rect x="220" y="320" width="150" height="90" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  <text x="240" y="340" font-family="Arial" font-size="12" fill="#718096">Total Spent</text>
+  <text x="240" y="367" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">$1,285.42</text>
+  <text x="240" y="390" font-family="Arial" font-size="12" fill="#68d391">↑ 8.3% vs. Last Period</text>
+  
+  <rect x="380" y="320" width="150" height="90" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  <text x="400" y="340" font-family="Arial" font-size="12" fill="#718096">Transactions</text>
+  <text x="400" y="367" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">47</text>
+  <text x="400" y="390" font-family="Arial" font-size="12" fill="#68d391">↑ 4 vs. Last Period</text>
+  
+  <rect x="540" y="320" width="150" height="90" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  <text x="560" y="340" font-family="Arial" font-size="12" fill="#718096">Avg. Transaction</text>
+  <text x="560" y="367" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">$27.35</text>
+  <text x="560" y="390" font-family="Arial" font-size="12" fill="#fc8181">↓ 2.1% vs. Last Period</text>
+  
+  <rect x="700" y="320" width="150" height="90" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  <text x="720" y="340" font-family="Arial" font-size="12" fill="#718096">% of Budget Used</text>
+  <text x="720" y="367" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">85.7%</text>
+  <text x="720" y="390" font-family="Arial" font-size="12" fill="#fc8181">↑ 5.7% vs. Budget</text>
+  
+  <!-- Monthly Trend Chart -->
+  <rect x="200" y="440" width="670" height="230" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="220" y="465" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Monthly Trend (Groceries)</text>
+  
+  <!-- Line Chart -->
+  <rect x="220" y="480" width="630" height="170" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Y Axis -->
+  <text x="240" y="500" font-family="Arial" font-size="10" fill="#718096">$500</text>
+  <text x="240" y="540" font-family="Arial" font-size="10" fill="#718096">$400</text>
+  <text x="240" y="580" font-family="Arial" font-size="10" fill="#718096">$300</text>
+  <text x="240" y="620" font-family="Arial" font-size="10" fill="#718096">$200</text>
+  
+  <!-- X Axis -->
+  <text x="280" y="650" font-family="Arial" font-size="10" fill="#718096">Mar</text>
+  <text x="380" y="650" font-family="Arial" font-size="10" fill="#718096">Apr</text>
+  <text x="480" y="650" font-family="Arial" font-size="10" fill="#718096">May</text>
+  <text x="580" y="650" font-family="Arial" font-size="10" fill="#718096">Jun</text>
+  <text x="680" y="650" font-family="Arial" font-size="10" fill="#718096">Jul</text>
+  <text x="780" y="650" font-family="Arial" font-size="10" fill="#718096">Aug</text>
+  
+  <!-- Grid Lines -->
+  <line x1="260" y1="500" x2="830" y2="500" stroke="#e0e6ed" stroke-width="1" stroke-dasharray="2,2" />
+  <line x1="260" y1="540" x2="830" y2="540" stroke="#e0e6ed" stroke-width="1" stroke-dasharray="2,2" />
+  <line x1="260" y1="580" x2="830" y2="580" stroke="#e0e6ed" stroke-width="1" stroke-dasharray="2,2" />
+  <line x1="260" y1="620" x2="830" y2="620" stroke="#e0e6ed" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <!-- Budget Line -->
+  <line x1="260" y1="510" x2="830" y2="510" stroke="#fc8181" stroke-width="2" />
+  <text x="780" y="505" font-family="Arial" font-size="10" fill="#fc8181">Budget ($475)</text>
+  
+  <!-- Line Chart Data -->
+  <polyline points="280,590 380,560 480,530 580,540 680,520 780,500" 
+            fill="none" stroke="#3182ce" stroke-width="3" />
+  
+  <!-- Data Points -->
+  <circle cx="280" cy="590" r="5" fill="#3182ce" />
+  <circle cx="380" cy="560" r="5" fill="#3182ce" />
+  <circle cx="480" cy="530" r="5" fill="#3182ce" />
+  <circle cx="580" cy="540" r="5" fill="#3182ce" />
+  <circle cx="680" cy="520" r="5" fill="#3182ce" />
+  <circle cx="780" cy="500" r="5" fill="#3182ce" />
+  
+  <!-- Data Labels -->
+  <text x="280" y="575" font-family="Arial" font-size="10" fill="#2d3748" text-anchor="middle">$298</text>
+  <text x="380" y="545" font-family="Arial" font-size="10" fill="#2d3748" text-anchor="middle">$356</text>
+  <text x="480" y="515" font-family="Arial" font-size="10" fill="#2d3748" text-anchor="middle">$412</text>
+  <text x="580" y="525" font-family="Arial" font-size="10" fill="#2d3748" text-anchor="middle">$395</text>
+  <text x="680" y="505" font-family="Arial" font-size="10" fill="#2d3748" text-anchor="middle">$428</text>
+  <text x="780" y="485" font-family="Arial" font-size="10" fill="#2d3748" text-anchor="middle">$485</text>
+  
+  <!-- Top Products -->
+  <rect x="200" y="680" width="330" height="240" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="220" y="705" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Top Grocery Items</text>
+  <text x="490" y="705" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">View All →</text>
+  
+  <!-- Product List -->
+  <rect x="220" y="720" width="290" height="40" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  <text x="240" y="745" font-family="Arial" font-size="14" fill="#2d3748">Organic Milk (1 gal)</text>
+  <text x="490" y="745" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$86.75</text>
+  
+  <rect x="220" y="765" width="290" height="40" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="240" y="790" font-family="Arial" font-size="14" fill="#2d3748">Fresh Produce</text>
+  <text x="490" y="790" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$78.42</text>
+  
+  <rect x="220" y="810" width="290" height="40" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  <text x="240" y="835" font-family="Arial" font-size="14" fill="#2d3748">Bread &amp; Pastries</text>
+  <text x="490" y="835" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$54.36</text>
+  
+  <rect x="220" y="855" width="290" height="40" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="240" y="880" font-family="Arial" font-size="14" fill="#2d3748">Cheese Selection</text>
+  <text x="490" y="880" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$47.85</text>
+  
+  <!-- Top Stores -->
+  <rect x="540" y="680" width="330" height="240" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="560" y="705" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Top Grocery Stores</text>
+  <text x="830" y="705" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">View All →</text>
+  
+  <!-- Store List with Progress Bars -->
+  <text x="560" y="745" font-family="Arial" font-size="14" fill="#2d3748">Whole Foods</text>
+  <text x="830" y="745" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$358.42</text>
+  <rect x="560" y="755" width="270" height="10" rx="5" fill="#edf2f7" />
+  <rect x="560" y="755" width="175" height="10" rx="5" fill="#3182ce" />
+  
+  <text x="560" y="790" font-family="Arial" font-size="14" fill="#2d3748">Trader Joe's</text>
+  <text x="830" y="790" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$246.78</text>
+  <rect x="560" y="800" width="270" height="10" rx="5" fill="#edf2f7" />
+  <rect x="560" y="800" width="120" height="10" rx="5" fill="#3182ce" />
+  
+  <text x="560" y="835" font-family="Arial" font-size="14" fill="#2d3748">Safeway</text>
+  <text x="830" y="835" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$189.55</text>
+  <rect x="560" y="845" width="270" height="10" rx="5" fill="#edf2f7" />
+  <rect x="560" y="845" width="90" height="10" rx="5" fill="#3182ce" />
+  
+  <text x="560" y="880" font-family="Arial" font-size="14" fill="#2d3748">Target</text>
+  <text x="830" y="880" font-family="Arial" font-size="14" fill="#2d3748" text-anchor="end">$95.22</text>
+  <rect x="560" y="890" width="270" height="10" rx="5" fill="#edf2f7" />
+  <rect x="560" y="890" width="45" height="10" rx="5" fill="#3182ce" />
+  
+  <!-- AI Analysis Section -->
+  <rect x="200" y="930" width="670" height="170" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="220" y="955" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">AI Analysis</text>
+  
+  <!-- AI Recommendations -->
+  <rect x="220" y="970" width="630" height="115" rx="5" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Recommendation Icons -->
+  <circle cx="250" cy="1000" r="15" fill="#3182ce" opacity="0.2" />
+  <text x="250" y="1005" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="middle">💡</text>
+  
+  <text x="280" y="1000" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748">Price Increase Detected</text>
+  <text x="280" y="1025" font-family="Arial" font-size="12" fill="#4a5568">Organic milk prices have increased 12% since last month. Consider switching to Store Brand milk to save approximately $2.50 per gallon.</text>
+  
+  <circle cx="250" cy="1055" r="15" fill="#2f855a" opacity="0.2" />
+  <text x="250" y="1060" font-family="Arial" font-size="14" fill="#2f855a" text-anchor="middle">📊</text>
+  
+  <text x="280" y="1055" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748">Spending Pattern</text>
+  <text x="280" y="1080" font-family="Arial" font-size="12" fill="#4a5568">Your grocery spending is gradually increasing and exceeded your budget in August. Top contributors to the increase: specialty cheeses (+68%) and organic produce (+23%).</text>
+  
+  <!-- Footer and Actions -->
+  <rect x="200" y="1110" width="670" height="50" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Action Buttons -->
+  <rect x="220" y="1120" width="150" height="30" rx="5" fill="#3182ce" stroke="#2c5282" stroke-width="1" />
+  <text x="255" y="1140" font-family="Arial" font-size="14" fill="#ffffff">📊 Compare Categories</text>
+  
+  <rect x="380" y="1120" width="150" height="30" rx="5" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="428" y="1140" font-family="Arial" font-size="14" fill="#4a5568">🗓️ Set Budget</text>
+  
+  <rect x="540" y="1120" width="150" height="30" rx="5" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="585" y="1140" font-family="Arial" font-size="14" fill="#4a5568">💾 Save Report</text>
+  
+  <rect x="700" y="1120" width="150" height="30" rx="5" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="735" y="1140" font-family="Arial" font-size="14" fill="#4a5568">📤 Share Report</text>
+</svg>

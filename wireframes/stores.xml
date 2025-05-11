@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 900 1800" xmlns="http://www.w3.org/2000/svg">
+<!-- SECTION 2: STORES PAGE -->
+  <rect x="0" y="600" width="900" height="600" fill="#f5f7fa" />
+  <text x="450" y="630" font-family="Arial" font-size="24" font-weight="bold" fill="#2d3748" text-anchor="middle">Stores Page</text>
+
+  <!-- Main App Container -->
+  <rect x="10" y="650" width="880" height="530" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Top Header -->
+  <rect x="10" y="650" width="880" height="60" rx="5 5 0 0" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="140" y="687" font-family="Arial" font-size="22" font-weight="bold" fill="#2d3748">Receipt Analytics</text>
+  
+  <!-- User dropdown -->
+  <rect x="780" y="665" width="90" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <circle cx="795" cy="680" r="10" fill="#3182ce" />
+  <text x="815" y="685" font-family="Arial" font-size="14" fill="#4a5568">User ▼</text>
+  
+  <!-- Search Bar -->
+  <rect x="500" y="665" width="200" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="520" y="685" font-family="Arial" font-size="14" fill="#a0aec0">Search receipts...</text>
+  <text x="680" y="685" font-family="Arial" font-size="14" fill="#a0aec0">🔍</text>
+  
+  <!-- Sidebar Navigation -->
+  <rect x="10" y="710" width="170" height="470" fill="#1a202c" rx="0 0 0 5" />
+  
+  <!-- Navigation items -->
+  <text x="50" y="750" font-family="Arial" font-size="14" fill="#a0aec0">Dashboard</text>
+  <text x="25" y="750" font-family="Arial" font-size="14" fill="#a0aec0">📊</text>
+  
+  <text x="50" y="800" font-family="Arial" font-size="14" fill="#a0aec0">All Receipts</text>
+  <text x="25" y="800" font-family="Arial" font-size="14" fill="#a0aec0">📝</text>
+  
+  <text x="50" y="850" font-family="Arial" font-size="14" fill="#a0aec0">Categories</text>
+  <text x="25" y="850" font-family="Arial" font-size="14" fill="#a0aec0">🏷️</text>
+  
+  <rect x="10" y="875" width="170" height="40" fill="#2d3748" />
+  <text x="50" y="900" font-family="Arial" font-size="14" fill="#ffffff">Stores</text>
+  <text x="25" y="900" font-family="Arial" font-size="14" fill="#ffffff">🏪</text>
+  
+  <text x="50" y="950" font-family="Arial" font-size="14" fill="#a0aec0">Budget</text>
+  <text x="25" y="950" font-family="Arial" font-size="14" fill="#a0aec0">💰</text>
+  
+  <text x="50" y="1000" font-family="Arial" font-size="14" fill="#a0aec0">Reports</text>
+  <text x="25" y="1000" font-family="Arial" font-size="14" fill="#a0aec0">📈</text>
+  
+  <text x="50" y="1050" font-family="Arial" font-size="14" fill="#a0aec0">Settings</text>
+  <text x="25" y="1050" font-family="Arial" font-size="14" fill="#a0aec0">⚙️</text>
+  
+  <line x1="25" y1="1100" x2="165" y2="1100" stroke="#4a5568" stroke-width="1" />
+  
+  <text x="50" y="1140" font-family="Arial" font-size="14" fill="#a0aec0">Help Center</text>
+  <text x="25" y="1140" font-family="Arial" font-size="14" fill="#a0aec0">❓</text>
+  
+  <!-- Main Content Area -->
+  <rect x="180" y="710" width="710" height="470" fill="#ffffff" />
+  
+  <!-- Stores Header -->
+  <text x="200" y="740" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">Stores</text>
+  
+  <!-- Add Store Button -->
+  <rect x="750" y="720" width="120" height="30" rx="5" fill="#3182ce" stroke="#2c5282" stroke-width="1" />
+  <text x="780" y="740" font-family="Arial" font-size="14" fill="#ffffff">Add Store</text>
+  
+  <!-- Store Filters -->
+  <rect x="400" y="720" width="100" height="30" rx="5" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="420" y="740" font-family="Arial" font-size="14" fill="#4a5568">Filter ▼</text>
+  
+  <rect x="510" y="720" width="100" height="30" rx="5" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="530" y="740" font-family="Arial" font-size="14" fill="#4a5568">Sort by ▼</text>
+  
+  <!-- Stores List with Details -->
+  <rect x="200" y="770" width="670" height="80" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" rx="5" />
+  <text x="220" y="800" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Supermarket</text>
+  <text x="220" y="825" font-family="Arial" font-size="14" fill="#718096">5 receipts | $301.45 total | Most common: Groceries</text>
+  <rect x="570" y="785" width="80" height="25" rx="12" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1" />
+  <text x="610" y="803" font-family="Arial" font-size="12" fill="#2b6cb0" text-anchor="middle">Groceries</text>
+  <text x="830" y="800" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">View</text>
+  <text x="830" y="825" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">Edit</text>
+  
+  <rect x="200" y="860" width="670" height="80" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" rx="5" />
+  <text x="220" y="890" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Drugstore</text>
+  <text x="220" y="915" font-family="Arial" font-size="14" fill="#718096">3 receipts | $125.60 total | Most common: Health</text>
+  <rect x="570" y="875" width="80" height="25" rx="12" fill="#e9f8fa" stroke="#81e6d9" stroke-width="1" />
+  <text x="610" y="893" font-family="Arial" font-size="12" fill="#2c7a7b" text-anchor="middle">Health</text>
+  <text x="830" y="890" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">View</text>
+  <text x="830" y="915" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">Edit</text>
+  
+  <rect x="200" y="950" width="670" height="80" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" rx="5" />
+  <text x="220" y="980" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Hardware Store</text>
+  <text x="220" y="1005" font-family="Arial" font-size="14" fill="#718096">2 receipts | $179.23 total | Most common: Home</text>
+  <rect x="570" y="965" width="80" height="25" rx="12" fill="#feebc8" stroke="#f6ad55" stroke-width="1" />
+  <text x="610" y="983" font-family="Arial" font-size="12" fill="#c05621" text-anchor="middle">Home</text>
+  <text x="830" y="980" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">View</text>
+  <text x="830" y="1005" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">Edit</text>
+  
+  <rect x="200" y="1040" width="670" height="80" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" rx="5" />
+  <text x="220" y="1070" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">Gas Station</text>
+  <text x="220" y="1095" font-family="Arial" font-size="14" fill="#718096">2 receipts | $96.54 total | Most common: Transport</text>
+  <rect x="570" y="1055" width="80" height="25" rx="12" fill="#e6e6ff" stroke="#9f7aea" stroke-width="1" />
+  <text x="610" y="1073" font-family="Arial" font-size="12" fill="#553c9a" text-anchor="middle">Transport</text>
+  <text x="830" y="1070" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">View</text>
+  <text x="830" y="1095" font-family="Arial" font-size="14" fill="#3182ce" text-anchor="end">Edit</text>
+  
+  <!-- Pagination -->
+  <rect x="450" y="1140" width="170" height="30" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" rx="15" />
+  <text x="470" y="1160" font-family="Arial" font-size="14" fill="#718096">◀</text>
+  <text x="500" y="1160" font-family="Arial" font-size="14" fill="#3182ce">1</text>
+  <text x="530" y="1160" font-family="Arial" font-size="14" fill="#718096">2</text>
+  <text x="560" y="1160" font-family="Arial" font-size="14" fill="#718096">3</text>
+  <text x="590" y="1160" font-family="Arial" font-size="14" fill="#718096">▶</text>
+</svg>

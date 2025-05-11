@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="1200" fill="#f5f7fa" />
+  
+  <!-- SECTION 1: BUDGET PAGE -->
+  <rect x="0" y="0" width="900" height="600" fill="#f5f7fa" />
+  <text x="450" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#2d3748" text-anchor="middle">Budget Page</text>
+
+  <!-- Main App Container -->
+  <rect x="10" y="50" width="880" height="530" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Top Header -->
+  <rect x="10" y="50" width="880" height="60" rx="5 5 0 0" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  <text x="140" y="87" font-family="Arial" font-size="22" font-weight="bold" fill="#2d3748">Receipt Analytics</text>
+  
+  <!-- User dropdown -->
+  <rect x="780" y="65" width="90" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <circle cx="795" cy="80" r="10" fill="#3182ce" />
+  <text x="815" y="85" font-family="Arial" font-size="14" fill="#4a5568">User ▼</text>
+  
+  <!-- Search Bar -->
+  <rect x="500" y="65" width="200" height="30" rx="15" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="520" y="85" font-family="Arial" font-size="14" fill="#a0aec0">Search receipts...</text>
+  <text x="680" y="85" font-family="Arial" font-size="14" fill="#a0aec0">🔍</text>
+  
+  <!-- Sidebar Navigation -->
+  <rect x="10" y="110" width="170" height="470" fill="#1a202c" rx="0 0 0 5" />
+  
+  <!-- Navigation items -->
+  <text x="50" y="150" font-family="Arial" font-size="14" fill="#a0aec0">Dashboard</text>
+  <text x="25" y="150" font-family="Arial" font-size="14" fill="#a0aec0">📊</text>
+  
+  <text x="50" y="200" font-family="Arial" font-size="14" fill="#a0aec0">All Receipts</text>
+  <text x="25" y="200" font-family="Arial" font-size="14" fill="#a0aec0">📝</text>
+  
+  <text x="50" y="250" font-family="Arial" font-size="14" fill="#a0aec0">Categories</text>
+  <text x="25" y="250" font-family="Arial" font-size="14" fill="#a0aec0">🏷️</text>
+  
+  <text x="50" y="300" font-family="Arial" font-size="14" fill="#a0aec0">Stores</text>
+  <text x="25" y="300" font-family="Arial" font-size="14" fill="#a0aec0">🏪</text>
+  
+  <rect x="10" y="325" width="170" height="40" fill="#2d3748" />
+  <text x="50" y="350" font-family="Arial" font-size="14" fill="#ffffff">Budget</text>
+  <text x="25" y="350" font-family="Arial" font-size="14" fill="#ffffff">💰</text>
+  
+  <text x="50" y="400" font-family="Arial" font-size="14" fill="#a0aec0">Reports</text>
+  <text x="25" y="400" font-family="Arial" font-size="14" fill="#a0aec0">📈</text>
+  
+  <text x="50" y="450" font-family="Arial" font-size="14" fill="#a0aec0">Settings</text>
+  <text x="25" y="450" font-family="Arial" font-size="14" fill="#a0aec0">⚙️</text>
+  
+  <line x1="25" y1="500" x2="165" y2="500" stroke="#4a5568" stroke-width="1" />
+  
+  <text x="50" y="540" font-family="Arial" font-size="14" fill="#a0aec0">Help Center</text>
+  <text x="25" y="540" font-family="Arial" font-size="14" fill="#a0aec0">❓</text>
+  
+  <!-- Main Content Area -->
+  <rect x="180" y="110" width="710" height="470" fill="#ffffff" />
+  
+  <!-- Budget Header -->
+  <text x="200" y="140" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">Budget</text>
+  
+  <!-- Month Selector -->
+  <rect x="400" y="120" width="150" height="30" rx="5" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1" />
+  <text x="450" y="140" font-family="Arial" font-size="14" fill="#4a5568" text-anchor="middle">May 2025 ▼</text>
+  
+  <!-- Add Budget Button -->
+  <rect x="750" y="120" width="120" height="30" rx="5" fill="#3182ce" stroke="#2c5282" stroke-width="1" />
+  <text x="772" y="140" font-family="Arial" font-size="14" fill="#ffffff">Add Budget</text>
+  
+  <!-- Budget Summary Card -->
+  <rect x="200" y="160" width="670" height="100" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Budget Summary Sections -->
+  <rect x="210" y="170" width="200" height="80" rx="5" fill="#f7fafc" />
+  <text x="310" y="195" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748" text-anchor="middle">Total Budget</text>
+  <text x="310" y="225" font-family="Arial" font-size="20" font-weight="bold" fill="#3182ce" text-anchor="middle">$1,200.00</text>
+  
+  <rect x="435" y="170" width="200" height="80" rx="5" fill="#f7fafc" />
+  <text x="535" y="195" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748" text-anchor="middle">Total Spent</text>
+  <text x="535" y="225" font-family="Arial" font-size="20" font-weight="bold" fill="#e53e3e" text-anchor="middle">$936.07</text>
+  
+  <rect x="660" y="170" width="200" height="80" rx="5" fill="#f7fafc" />
+  <text x="760" y="195" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748" text-anchor="middle">Remaining</text>
+  <text x="760" y="225" font-family="Arial" font-size="20" font-weight="bold" fill="#38a169" text-anchor="middle">$263.93</text>
+  
+  <!-- Budget Progress Bar -->
+  <rect x="200" y="270" width="670" height="30" rx="15" fill="#edf2f7" stroke="#e0e6ed" stroke-width="1" />
+  <rect x="200" y="270" width="520" height="30" rx="15" fill="#3182ce" />
+  <text x="520" y="290" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">78% of budget used</text>
+  
+  <!-- Budget Categories Table -->
+  <rect x="200" y="310" width="670" height="250" rx="5" fill="#ffffff" stroke="#e0e6ed" stroke-width="1" />
+  
+  <!-- Table Header -->
+  <rect x="200" y="310" width="670" height="40" rx="5 5 0 0" fill="#f7fafc" stroke="#e0e6ed" stroke-width="1" />
+  <text x="220" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#4a5568">Category</text>
+  <text x="420" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#4a5568">Budget</text>
+  <text x="520" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#4a5568">Spent</text>
+  <text x="620" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#4a5568">Remaining</text>
+  <text x="750" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#4a5568">Progress</text>
+  <text x="840" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#4a5568">Actions</text>
+  
+  <!-- Table Row 1: Groceries -->
+  <line x1="200" y1="350" x2="870" y2="350" stroke="#e0e6ed" stroke-width="1" />
+  
+  <circle cx="230" cy="370" r="12" fill="#ebf8ff" stroke="#2c5282" stroke-width="1" />
+  <text x="230" y="375" font-family="Arial" font-size="14" font-weight="bold" fill="#2c5282" text-anchor="middle">G</text>
+  <text x="250" y="375" font-family="Arial" font-size="14" fill="#2d3748">Groceries</text>
+  
+  <text x="420" y="375" font-family="Arial" font-size="14" fill="#2d3748">$350.00</text>
+  <text x="520" y="375" font-family="Arial" font-size="14" fill="#2d3748">$301.45</text>
+  <text x="620" y="375" font-family="Arial" font-size="14" fill="#38a169">$48.55</text>
+  
+  <!-- Mini Progress Bar -->
+  <rect x="730" y="365" width="60" height="15" rx="7.5" fill="#edf2f7" />
+  <rect x="730" y="365" width="52" height="15" rx="7.5" fill="#3182ce" />
+  <text x="800" y="375" font-family="Arial" font-size="12" fill="#718096">86%</text>
+  
+  <text x="840" y="375" font-family="Arial" font-size="12" fill="#3182ce">Edit</text>
+  
+  <!-- Table Row 2: Health -->
+  <line x1="200" y1="390" x2="870" y2="390" stroke="#e0e6ed" stroke-width="1" />
+  
+  <circle cx="230" cy="410" r="12" fill="#e9f8fa" stroke="#2c7a7b" stroke-width="1" />
+  <text x="230" y="415" font-family="Arial" font-size="14" font-weight="bold" fill="#2c7a7b" text-anchor="middle">H</text>
+  <text x="250" y="415" font-family="Arial" font-size="14" fill="#2d3748">Health</text>
+  
+  <text x="420" y="415" font-family="Arial" font-size="14" fill="#2d3748">$200.00</text>
+  <text x="520" y="415" font-family="Arial" font-size="14" fill="#2d3748">$125.60</text>
+  <text x="620" y="415" font-family="Arial" font-size="14" fill="#38a169">$74.40</text>
+  
+  <!-- Mini Progress Bar -->
+  <rect x="730" y="405" width="60" height="15" rx="7.5" fill="#edf2f7" />
+  <rect x="730" y="405" width="38" height="15" rx="7.5" fill="#3182ce" />
+  <text x="800" y="415" font-family="Arial" font-size="12" fill="#718096">63%</text>
+  
+  <text x="840" y="415" font-family="Arial" font-size="12" fill="#3182ce">Edit</text>
+  
+  <!-- Table Row 3: Home -->
+  <line x1="200" y1="430" x2="870" y2="430" stroke="#e0e6ed" stroke-width="1" />
+  
+  <circle cx="230" cy="450" r="12" fill="#feebc8" stroke="#c05621" stroke-width="1" />
+  <text x="230" y="455" font-family="Arial" font-size="14" font-weight="bold" fill="#c05621" text-anchor="middle">H</text>
+  <text x="250" y="455" font-family="Arial" font-size="14" fill="#2d3748">Home</text>
+  
+  <text x="420" y="455" font-family="Arial" font-size="14" fill="#2d3748">$150.00</text>
+  <text x="520" y="455" font-family="Arial" font-size="14" fill="#2d3748">$179.23</text>
+  <text x="620" y="455" font-family="Arial" font-size="14" fill="#e53e3e">-$29.23</text>
+  
+  <!-- Mini Progress Bar -->
+  <rect x="730" y="445" width="60" height="15" rx="7.5" fill="#edf2f7" />
+  <rect x="730" y="445" width="60" height="15" rx="7.5" fill="#e53e3e" />
+  <text x="800" y="455" font-family="Arial" font-size="12" fill="#718096">119%</text>
+  
+  <text x="840" y="455" font-family="Arial" font-size="12" fill="#3182ce">Edit</text>
+  
+  <!-- Table Row 4: Transport -->
+  <line x1="200" y1="470" x2="870" y2="470" stroke="#e0e6ed" stroke-width="1" />
+  
+  <circle cx="230" cy="490" r="12" fill="#e6e6ff" stroke="#553c9a" stroke-width="1" />
+  <text x="230" y="495" font-family="Arial" font-size="14" font-weight="bold" fill="#553c9a" text-anchor="middle">T</text>
+  <text x="250" y="495" font-family="Arial" font-size="14" fill="#2d3748">Transport</text>
+  
+  <text x="420" y="495" font-family="Arial" font-size="14" fill="#2d3748">$120.00</text>
+  <text x="520" y="495" font-family="Arial" font-size="14" fill="#2d3748">$96.54</text>
+  <text x="620" y="495" font-family="Arial" font-size="14" fill="#38a169">$23.46</text>
+  
+  <!-- Mini Progress Bar -->
+  <rect x="730" y="485" width="60" height="15" rx="7.5" fill="#edf2f7" />
+  <rect x="730" y="485" width="48" height="15" rx="7.5" fill="#3182ce" />
+  <text x="800" y="495" font-family="Arial" font-size="12" fill="#718096">80%</text>
+  
+  <text x="840" y="495" font-family="Arial" font-size="12" fill="#3182ce">Edit</text>
+  
+  <!-- Table Row 5: Dining -->
+  <line x1="200" y1="510" x2="870" y2="510" stroke="#e0e6ed" stroke-width="1" />
+  
+  <circle cx="230" cy="530" r="12" fill="#e6ffed" stroke="#2f855a" stroke-width="1" />
+  <text x="230" y="535" font-family="Arial" font-size="14" font-weight="bold" fill="#2f855a" text-anchor="middle">D</text>
+  <text x="250" y="535" font-family="Arial" font-size="14" fill="#2d3748">Dining</text>
+  
+  <text x="420" y="535" font-family="Arial" font-size="14" fill="#2d3748">$180.00</text>
+  <text x="520" y="535" font-family="Arial" font-size="14" fill="#2d3748">$150.75</text>
+  <text x="620" y="535" font-family="Arial" font-size="14" fill="#38a169">$29.25</text>
+  
+  <!-- Mini Progress Bar -->
+  <rect x="730" y="525" width="60" height="15" rx="7.5" fill="#edf2f7" />
+  <rect x="730" y="525" width="50" height="15" rx="7.5" fill="#3182ce" />
+  <text x="800" y="535" font-family="Arial" font-size="12" fill="#718096">84%</text>
+  
+  <text x="840" y="535" font-family="Arial" font-size="12" fill="#3182ce">Edit</text>
+</svg>
