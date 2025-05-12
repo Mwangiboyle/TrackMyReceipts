@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Analytics - All Receipts</title>
+    <link rel="stylesheet" href="css\receipts.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Receipt Analytics</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="receipts.html"><i class="fas fa-receipt"></i> All Receipts</a>
+                    </li>
+                    <li>
+                        <a href="categories.html"><i class="fas fa-tags"></i> Categories</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-store"></i> Stores</a>
+                    </li>
+                    <li>
+                        <a href="budget.html"><i class="fas fa-wallet"></i> Budget</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-line"></i> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+                <div class="sidebar-footer">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="main-header">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search receipts...">
+                    </div>
+                </div>
+                <div class="user-dropdown">
+                    <div class="user-avatar"></div>
+                    <span>User</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </header>
+
+            <!-- All Receipts Content -->
+            <div class="receipts-content">
+                <!-- Receipts Header -->
+                <div class="receipts-header">
+                    <h2>All Receipts</h2>
+                    <div class="receipts-controls">
+                        <div class="control-group">
+                            <div class="control-item">
+                                <select name="filter" id="filter">
+                                    <option value="">Filter</option>
+                                    <option value="store">By Store</option>
+                                    <option value="category">By Category</option>
+                                    <option value="amount">By Amount</option>
+                                </select>
+                            </div>
+                            <div class="control-item">
+                                <select name="sort" id="sort">
+                                    <option value="">Sort by</option>
+                                    <option value="date-desc">Date (Newest)</option>
+                                    <option value="date-asc">Date (Oldest)</option>
+                                    <option value="amount-desc">Amount (High-Low)</option>
+                                    <option value="amount-asc">Amount (Low-High)</option>
+                                </select>
+                            </div>
+                            <div class="control-item">
+                                <select name="date" id="date">
+                                    <option value="">Date</option>
+                                    <option value="today">Today</option>
+                                    <option value="yesterday">Yesterday</option>
+                                    <option value="last-week">Last Week</option>
+                                    <option value="last-month">Last Month</option>
+                                    <option value="custom">Custom Range</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn-primary">
+                            <i class="fas fa-upload"></i> Upload New
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Receipts Table -->
+                <div class="receipts-table-container">
+                    <table class="receipts-table">
+                        <thead>
+                            <tr>
+                                <th>Store</th>
+                                <th>Date</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Supermarket</td>
+                                <td>12/21/2019</td>
+                                <td><span class="category-tag groceries">Groceries</span></td>
+                                <td>$57.07</td>
+                                <td><a href="#" class="action-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Drugstore</td>
+                                <td>12/18/2019</td>
+                                <td><span class="category-tag health">Health</span></td>
+                                <td>$32.45</td>
+                                <td><a href="#" class="action-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Hardware Store</td>
+                                <td>12/15/2019</td>
+                                <td><span class="category-tag home">Home</span></td>
+                                <td>$89.23</td>
+                                <td><a href="#" class="action-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>Gas Station</td>
+                                <td>12/14/2019</td>
+                                <td><span class="category-tag transport">Transport</span></td>
+                                <td>$48.76</td>
+                                <td><a href="#" class="action-link">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="pagination-arrow disabled"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="pagination-page active">1</a>
+                    <a href="#" class="pagination-page">2</a>
+                    <a href="#" class="pagination-page">3</a>
+                    <a href="#" class="pagination-page">4</a>
+                    <a href="#" class="pagination-arrow"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

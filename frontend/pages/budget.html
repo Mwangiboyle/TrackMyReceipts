@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget | Receipt Analytics</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/budget.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Header -->
+        <header class="app-header">
+            <h1>Receipt Analytics</h1>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search receipts...">
+                <span class="search-icon">🔍</span>
+            </div>
+            
+            <div class="user-dropdown">
+                <div class="user-avatar"></div>
+                <span>User ▼</span>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <div class="app-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li>
+                        <span class="icon">📊</span>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <span class="icon">📝</span>
+                        <a href="receipts.html">All Receipts</a>
+                    </li>
+                    <li>
+                        <span class="icon">🏷️</span>
+                        <a href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <span class="icon">🏪</span>
+                        <a href="stores.html">Stores</a>
+                    </li>
+                    <li class="active">
+                        <span class="icon">💰</span>
+                        <a href="budget.html">Budget</a>
+                    </li>
+                    <li>
+                        <span class="icon">📈</span>
+                        <a href="report.html">Reports</a>
+                    </li>
+                    <li>
+                        <span class="icon">⚙️</span>
+                        <a href="#">Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <span class="icon">❓</span>
+                        <a href="#">Help Center</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Main Content Area -->
+            <main class="content-area">
+                <div class="content-header">
+                    <h2>Budget</h2>
+                    <div class="month-selector">
+                        <span>May 2025 ▼</span>
+                    </div>
+                    <button class="add-budget-btn">Add Budget</button>
+                </div>
+                
+                <!-- Budget Summary Cards -->
+                <div class="budget-summary">
+                    <div class="summary-card">
+                        <h3>Total Budget</h3>
+                        <p class="amount total-budget">$1,200.00</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Total Spent</h3>
+                        <p class="amount total-spent">$936.07</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Remaining</h3>
+                        <p class="amount remaining">$263.93</p>
+                    </div>
+                </div>
+                
+                <!-- Budget Progress Bar -->
+                <div class="budget-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 78%"></div>
+                        <span class="progress-text">78% of budget used</span>
+                    </div>
+                </div>
+                
+                <!-- Budget Categories Table -->
+                <div class="budget-table">
+                    <div class="table-header">
+                        <div class="header-cell category">Category</div>
+                        <div class="header-cell">Budget</div>
+                        <div class="header-cell">Spent</div>
+                        <div class="header-cell">Remaining</div>
+                        <div class="header-cell">Progress</div>
+                        <div class="header-cell actions">Actions</div>
+                    </div>
+                    
+                    <!-- Table Rows -->
+                    <div class="table-row">
+                        <div class="row-cell category-cell">
+                            <div class="category-icon groceries">G</div>
+                            <span>Groceries</span>
+                        </div>
+                        <div class="row-cell">$350.00</div>
+                        <div class="row-cell">$301.45</div>
+                        <div class="row-cell positive">$48.55</div>
+                        <div class="row-cell progress-cell">
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" style="width: 86%"></div>
+                            </div>
+                            <span>86%</span>
+                        </div>
+                        <div class="row-cell actions-cell">
+                            <span class="edit-btn">Edit</span>
+                        </div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="row-cell category-cell">
+                            <div class="category-icon health">H</div>
+                            <span>Health</span>
+                        </div>
+                        <div class="row-cell">$200.00</div>
+                        <div class="row-cell">$125.60</div>
+                        <div class="row-cell positive">$74.40</div>
+                        <div class="row-cell progress-cell">
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" style="width: 63%"></div>
+                            </div>
+                            <span>63%</span>
+                        </div>
+                        <div class="row-cell actions-cell">
+                            <span class="edit-btn">Edit</span>
+                        </div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="row-cell category-cell">
+                            <div class="category-icon home">H</div>
+                            <span>Home</span>
+                        </div>
+                        <div class="row-cell">$150.00</div>
+                        <div class="row-cell">$179.23</div>
+                        <div class="row-cell negative">-$29.23</div>
+                        <div class="row-cell progress-cell">
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill over-budget" style="width: 119%"></div>
+                            </div>
+                            <span>119%</span>
+                        </div>
+                        <div class="row-cell actions-cell">
+                            <span class="edit-btn">Edit</span>
+                        </div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="row-cell category-cell">
+                            <div class="category-icon transport">T</div>
+                            <span>Transport</span>
+                        </div>
+                        <div class="row-cell">$120.00</div>
+                        <div class="row-cell">$96.54</div>
+                        <div class="row-cell positive">$23.46</div>
+                        <div class="row-cell progress-cell">
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                        <div class="row-cell actions-cell">
+                            <span class="edit-btn">Edit</span>
+                        </div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="row-cell category-cell">
+                            <div class="category-icon dining">D</div>
+                            <span>Dining</span>
+                        </div>
+                        <div class="row-cell">$180.00</div>
+                        <div class="row-cell">$150.75</div>
+                        <div class="row-cell positive">$29.25</div>
+                        <div class="row-cell progress-cell">
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" style="width: 84%"></div>
+                            </div>
+                            <span>84%</span>
+                        </div>
+                        <div class="row-cell actions-cell">
+                            <span class="edit-btn">Edit</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="../js/budget.js"></script>
+</body>
+</html>

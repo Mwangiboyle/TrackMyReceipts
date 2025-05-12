@@ -1,0 +1,250 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+/* App Container */
+app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Top Header */
+.top-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e6ed;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header h1 {
+    color: #2d3748;
+    font-size: 22px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 8px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 15px;
+    background-color: #edf2f7;
+    color: #4a5568;
+}
+
+.search-bar input::placeholder {
+    color: #a0aec0;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    right: 10px;
+    color: #a0aec0;
+}
+
+/* User Dropdown */
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    background-color: #edf2f7;
+    border: 1px solid #cbd5e0;
+    border-radius: 15px;
+    padding: 8px 15px;
+    color: #4a5568;
+}
+
+.user-dropdown .user-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #3182ce;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1a202c;
+    color: #a0aec0;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    padding: 10px 25px;
+    color: #a0aec0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar li.active {
+    background-color: #2d3748;
+    color: #ffffff;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #4a5568;
+    margin: 20px 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Categories Section */
+.categories-section {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    color: #2d3748;
+    font-size: 20px;
+}
+
+.add-category-btn {
+    background-color: #3182ce;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Categories Grid */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    border: 1px solid #e0e6ed;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 16px;
+}
+
+.category-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+/* Category Color Variations */
+.groceries { background-color: #ebf8ff; color: #2c5282; }
+.groceries .category-icon { border-color: #2c5282; color: #2c5282; }
+
+.health { background-color: #e9f8fa; color: #2c7a7b; }
+.health .category-icon { border-color: #2c7a7b; color: #2c7a7b; }
+
+.home { background-color: #feebc8; color: #c05621; }
+.home .category-icon { border-color: #c05621; color: #c05621; }
+
+.transport { background-color: #e6e6ff; color: #553c9a; }
+.transport .category-icon { border-color: #553c9a; color: #553c9a; }
+
+.dining { background-color: #e6ffed; color: #2f855a; }
+.dining .category-icon { border-color: #2f855a; color: #2f855a; }
+
+.entertainment { background-color: #ffe6e6; color: #c53030; }
+.entertainment .category-icon { border-color: #c53030; color: #c53030; }
+
+.card-details {
+    padding: 15px;
+}
+
+.card-details p {
+    margin-bottom: 5px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card-actions a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.card-actions .edit {
+    color: #3182ce;
+}
+
+.card-actions .delete {
+    color: #e53e3e;
+}
+
+.add-new {
+    border: 2px dashed #e0e6ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #718096;
+    cursor: pointer;
+}
+
+.add-new p {
+    font-size: 16px;
+}

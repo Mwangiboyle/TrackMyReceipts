@@ -1,0 +1,386 @@
+/* Base Styles */
+:root {
+    --sidebar-bg: #1a202c;
+    --sidebar-active-bg: #2d3748;
+    --sidebar-text: #a0aec0;
+    --sidebar-active-text: #ffffff;
+    --header-bg: #ffffff;
+    --content-bg: #ffffff;
+    --card-bg: #ffffff;
+    --card-border: #e0e6ed;
+    --text-dark: #2d3748;
+    --text-medium: #4a5568;
+    --text-light: #a0aec0;
+    --primary-blue: #3182ce;
+    --primary-blue-dark: #2c5282;
+    --primary-red: #e53e3e;
+    --primary-green: #38a169;
+    --light-bg: #f7fafc;
+}
+
+/* App Layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--card-border);
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.search-bar {
+    position: relative;
+    width: 200px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: 1px solid var(--card-border);
+    background-color: #edf2f7;
+    color: var(--text-medium);
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    background-color: #edf2f7;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-blue);
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 170px;
+    background-color: var(--sidebar-bg);
+    padding: 1rem 0;
+    border-radius: 0 0 0 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--sidebar-text);
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background-color: var(--sidebar-active-bg);
+    color: var(--sidebar-active-text);
+}
+
+.sidebar li:hover:not(.active) {
+    color: var(--sidebar-active-text);
+}
+
+.sidebar .divider {
+    height: 1px;
+    background-color: #4a5568;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.sidebar a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+/* Main Content Area */
+.app-content {
+    display: flex;
+    flex: 1;
+}
+
+.content-area {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: var(--content-bg);
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.content-header h2 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.month-selector {
+    padding: 0.5rem 1rem;
+    background-color: #edf2f7;
+    border-radius: 5px;
+    border: 1px solid var(--card-border);
+    font-size: 0.875rem;
+    color: var(--text-medium);
+    cursor: pointer;
+}
+
+.add-budget-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+/* Budget Summary Cards */
+.budget-summary {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary-card {
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.summary-card h3 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.summary-card .amount {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.summary-card .total-budget {
+    color: var(--primary-blue);
+}
+
+.summary-card .total-spent {
+    color: var(--primary-red);
+}
+
+.summary-card .remaining {
+    color: var(--primary-green);
+}
+
+/* Budget Progress Bar */
+.budget-progress {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #edf2f7;
+    border-radius: 15px;
+    position: relative;
+    border: 1px solid var(--card-border);
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+/* Budget Table */
+.budget-table {
+    border: 1px solid var(--card-border);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-header {
+    display: flex;
+    background-color: var(--light-bg);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--card-border);
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: var(--text-medium);
+}
+
+.header-cell {
+    flex: 1;
+    padding: 0 0.5rem;
+}
+
+.header-cell.category {
+    flex: 2;
+}
+
+.header-cell.actions {
+    flex: 0.5;
+    text-align: right;
+}
+
+.table-row {
+    display: flex;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--card-border);
+    align-items: center;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.row-cell {
+    flex: 1;
+    padding: 0 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+}
+
+.row-cell.category-cell {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.row-cell.positive {
+    color: var(--primary-green);
+}
+
+.row-cell.negative {
+    color: var(--primary-red);
+}
+
+.row-cell.progress-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.row-cell.actions-cell {
+    flex: 0.5;
+    text-align: right;
+}
+
+.edit-btn {
+    color: var(--primary-blue);
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+/* Category Icons */
+.category-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+.category-icon.groceries {
+    background-color: #ebf8ff;
+    border-color: var(--primary-blue-dark);
+    color: var(--primary-blue-dark);
+}
+
+.category-icon.health {
+    background-color: #e9f8fa;
+    border-color: #2c7a7b;
+    color: #2c7a7b;
+}
+
+.category-icon.home {
+    background-color: #feebc8;
+    border-color: #c05621;
+    color: #c05621;
+}
+
+.category-icon.transport {
+    background-color: #e6e6ff;
+    border-color: #553c9a;
+    color: #553c9a;
+}
+
+.category-icon.dining {
+    background-color: #e6ffed;
+    border-color: #2f855a;
+    color: #2f855a;
+}
+
+/* Mini Progress Bars */
+.mini-progress {
+    width: 60px;
+    height: 15px;
+    background-color: #edf2f7;
+    border-radius: 7.5px;
+    overflow: hidden;
+}
+
+.mini-progress-fill {
+    height: 100%;
+    border-radius: 7.5px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.mini-progress-fill.over-budget {
+    background-color: var(--primary-red);
+}

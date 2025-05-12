@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Analytics Dashboard</title>
+    <link rel="stylesheet" href="css\dashboard.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Receipt Analytics</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-chart-bar"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="receipts.html"><i class="fas fa-receipt"></i> All Receipts</a>
+                    </li>
+                    <li>
+                        <a href="categories.html"><i class="fas fa-tags"></i> Categories</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-store"></i> Stores</a>
+                    </li>
+                    <li>
+                        <a href="budget.html"><i class="fas fa-wallet"></i> Budget</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-line"></i> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+                <div class="sidebar-footer">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="main-header">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search receipts...">
+                    </div>
+                </div>
+                <div class="user-dropdown">
+                    <div class="user-avatar"></div>
+                    <span>User</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Upload Receipt Card -->
+                <section class="upload-card">
+                    <div class="upload-info">
+                        <h3>Upload Your Receipts</h3>
+                        <p>Drag and drop receipt images or browse to upload</p>
+                    </div>
+                    <div class="upload-actions">
+                        <button class="btn-primary">Upload</button>
+                        <span class="upload-shortcut">⇥</span>
+                    </div>
+                </section>
+
+                <!-- KPI Cards Row -->
+                <div class="kpi-cards">
+                    <div class="kpi-card">
+                        <div class="kpi-label">This Month's Spend</div>
+                        <div class="kpi-value">$752.32</div>
+                        <div class="kpi-trend positive">↑ 12% from last month</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Average Receipt</div>
+                        <div class="kpi-value">$57.87</div>
+                        <div class="kpi-trend negative">↓ 3% from last month</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Receipt Count</div>
+                        <div class="kpi-value">13</div>
+                        <div class="kpi-trend positive">↑ 2 from last month</div>
+                    </div>
+                </div>
+
+                <!-- Charts Row -->
+                <div class="charts-row">
+                    <div class="chart-card">
+                        <h3>Spending by Category</h3>
+                        <div class="chart-container">
+                            <canvas id="categoryChart"></canvas>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <div class="color-box groceries"></div>
+                                <span>Groceries (40%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="color-box dining"></div>
+                                <span>Dining (20%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="color-box household"></div>
+                                <span>Household (15%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="color-box transport"></div>
+                                <span>Transport (15%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="color-box other"></div>
+                                <span>Other (10%)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Stores by Spend</h3>
+                        <div class="chart-container">
+                            <canvas id="storesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row -->
+                <div class="bottom-row">
+                    <div class="chart-card">
+                        <h3>Recent Activity</h3>
+                        <ul class="receipt-list">
+                            <li class="receipt-item">
+                                <div class="receipt-info">
+                                    <div class="receipt-store">Supermarket</div>
+                                    <div class="receipt-date">12/21/2019</div>
+                                </div>
+                                <div class="receipt-amount">$57.07</div>
+                            </li>
+                            <li class="receipt-item">
+                                <div class="receipt-info">
+                                    <div class="receipt-store">Drugstore</div>
+                                    <div class="receipt-date">12/18/2019</div>
+                                </div>
+                                <div class="receipt-amount">$32.45</div>
+                            </li>
+                            <li class="receipt-item">
+                                <div class="receipt-info">
+                                    <div class="receipt-store">Hardware Store</div>
+                                    <div class="receipt-date">12/15/2019</div>
+                                </div>
+                                <div class="receipt-amount">$89.23</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Monthly Spending Trend</h3>
+                        <div class="chart-container">
+                            <canvas id="trendChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Initialize Category Pie Chart
+        const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+        const categoryChart = new Chart(categoryCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Groceries', 'Dining', 'Household', 'Transport', 'Other'],
+                datasets: [{
+                    data: [40, 20, 15, 15, 10],
+                    backgroundColor: [
+                        '#3182ce', // Groceries
+                        '#38b2ac', // Dining
+                        '#ed8936', // Household
+                        '#9f7aea', // Transport
+                        '#667eea'  // Other
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '65%',
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Initialize Stores Bar Chart
+        const storesCtx = document.getElementById('storesChart').getContext('2d');
+        const storesChart = new Chart(storesCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Supermarket', 'Drug Store', 'Hardware', 'Gas Station', 'Other'],
+                datasets: [{
+                    label: 'Amount ($)',
+                    data: [300, 250, 200, 150, 100],
+                    backgroundColor: [
+                        'rgba(49, 130, 206, 1)',
+                        'rgba(49, 130, 206, 0.9)',
+                        'rgba(49, 130, 206, 0.8)',
+                        'rgba(49, 130, 206, 0.7)',
+                        'rgba(49, 130, 206, 0.6)'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Initialize Monthly Trend Line Chart
+        const trendCtx = document.getElementById('trendChart').getContext('2d');
+        const trendChart = new Chart(trendCtx, {
+            type: 'line',
+            data: {
+                labels: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Monthly Spend ($)',
+                    data: [650, 700, 675, 750, 775, 700, 725],
+                    fill: false,
+                    borderColor: '#3182ce',
+                    tension: 0.1,
+                    pointBackgroundColor: '#3182ce',
+                    pointRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
