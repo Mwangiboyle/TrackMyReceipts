@@ -2,3 +2,4 @@ venv
 .env
 notebook.ipynb
 main.py
+backend\__pycache__
